@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="button" type="id" />
+    <item name="type_last" type="id" />
+    <item name="type_year" type="id" />
+    <item name="type_first" type="id" />
+    <item name="imageView" type="id" />
+    <item name="grad_year" type="id" />
+    <item name="last_name" type="id" />
+    <item name="first_name" type="id" />
+</resources>

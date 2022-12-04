@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/greenbg"
+tools:context=".CreateProfile">
+
+<TextView
+    android:id="@+id/aboutMe_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="84dp"
+    android:layout_marginTop="19dp"
+    android:text="What's up with current me:"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editTextGradYear" />
+
+<TextView
+    android:id="@+id/gradYear_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="20dp"
+    android:text="Grad Year:"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/name_text" />
+
+<TextView
+    android:id="@+id/profile_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginStart="97dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="184dp"
+    android:text="Create Profile"
+    android:textAlignment="textStart"
+    android:textSize="35sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/name_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="38dp"
+    android:layout_marginTop="259dp"
+    android:text="Name:"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<Button
+    android:id="@+id/createProfile"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="73dp"
+    android:layout_marginEnd="15dp"
+    android:text="Create Profile"
+    android:theme="@style/Theme.Material3.DynamicColors.DayNight"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editText_currentMe" />
+
+<EditText
+    android:id="@+id/editTextName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="184dp"
+    android:layout_marginEnd="86dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/profile_text" />
+
+<EditText
+    android:id="@+id/editTextGradYear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="11dp"
+    android:layout_marginEnd="86dp"
+    android:ems="10"
+    android:inputType="number"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+<EditText
+    android:id="@+id/editText_currentMe"
+    android:layout_width="364dp"
+    android:layout_height="120dp"
+    android:layout_marginStart="31dp"
+    android:layout_marginTop="14dp"
+    android:ems="10"
+    android:gravity="start|top"
+    android:inputType="textMultiLine"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/aboutMe_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
